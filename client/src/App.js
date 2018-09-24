@@ -7,16 +7,17 @@ import Banner from "./components/Banner";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
 
+
 class App extends Component {
   render() {
     return (
       <Router>
-      <div>
-      <Navbar />
-      <Banner type="banner"/>
-      <Container class="header" />
-      <Footer />
-      </div>
+        <div>
+          <Navbar />
+          <Banner type="banner"/>
+          <Container class="header" />
+          <Footer />
+        </div>
       </Router>
     );
   }

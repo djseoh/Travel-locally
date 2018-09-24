@@ -2,24 +2,44 @@ nav {
     background: none;
     min-height: 85px;
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     z-index: 20;
     transition: 0.35s all ease;
-}
-ul {
+  }
+  nav ul {
     list-style: none;
     padding: 2rem;
     transition: 0.35s all ease;
-}
-li {
+  }
+  nav ul li {
     display: inline-block;
     color: black;
     padding: 0 1rem;
     font-family: sans-serif;
-}
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  /* .scrolled {
+    min-height: 10px;
+    background: black;
+    transition: 0.35s all ease;
+  }
+  .scrolled ul {
+    padding: 1rem 2rem;
+    transition: 0.35s all ease;
+  }
+  .scrolled li {
+    color: white;
+    transition: 0.2s all ease-in-out;
+  } */
 
 .right {
     float: right;
