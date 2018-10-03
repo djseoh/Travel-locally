@@ -6,16 +6,36 @@ import Search from "./components/Search";
 import Banner from "./components/Banner";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
+import LogIn from "./components/LogIn";
 
 
 class App extends Component {
+  _timeoutID;
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      modalToggled: false
+    };
+    this.toggleModal = this.toggleModal.bind(this)
+  }
+
+  toggleModal () {
+    let isModalToggled = this.state.modalToggled
+    this.setState ({
+      modalToggled: !isModalToggled
+    });
+  }
+
   render() {
+    let modalComponent = (this.state.modalToggled) ? '': <LogIn />
     return (
       <Router>
         <div>
-          <Navbar />
+          <Navbar click={this.toggleModal} />
           <Banner type="banner"/>
           <Container class="header" />
+          {modalComponent}
           <Footer />
         </div>
       </Router>

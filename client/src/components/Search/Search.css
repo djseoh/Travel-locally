@@ -1,5 +1,5 @@
 
- #content {
+ .content {
 	position: absolute;
 	height: 50px;
 	width: 300px;
@@ -9,7 +9,7 @@
 	transform: translate(-50%, -50%);
   }
   
-  #content.on {
+  .content.on {
 	-webkit-animation-name: in-out;
 	animation-name: in-out;
 	-webkit-animation-duration: 0.7s;
@@ -20,7 +20,7 @@
 	animation-iteration-count: 1;
   }
   
-  .put {
+  .input {
 	box-sizing: border-box;
 	width: 50px;
 	height: 50px;
@@ -112,7 +112,7 @@
 	transform: rotate(-45deg);
   }
   
-  .square {
+  .searchSquare {
 	box-sizing: border-box;
 	padding: 0 40px 0 10px;
 	width: 300px;

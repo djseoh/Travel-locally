@@ -4,14 +4,14 @@ import Button from "../Button";
 import "./Navbar.css";
 
   
-const Navbar = props => (
+const Navbar = (props) =>(
     <nav>
         <ul>
         <li className='navbuttons'><Button path= '/' label ='here' /> </li>
         <li className='navbuttons'><Button path= '/' label ='there' /> </li>
         <li className='navbuttons'><Button path= '/' label ='where' /> </li>
         <li className="right navbuttons"><Button path='/' label='sign-in'/> </li>
-        <li className="right navbuttons"><Button  path='/login' label='log-in'/> </li>
+        <li className="right navbuttons"><Button onClick={props.click} label='log-in'/> </li>
         </ul>   
     </nav>
 )

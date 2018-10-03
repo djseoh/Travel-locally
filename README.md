@@ -2,8 +2,6 @@
 
 ## Our Team
 * Daniel Seoh
-* Josh Tec
-* Anthony Giamboy
 
 ## Overview
 
@@ -18,17 +16,14 @@ This Website will utilize the following technologies:
 * Node.js
 * Express
 * Bootstrap
+* PostgreSQL
 
 ## Contributions
 
 Daniel Seoh:
 * UI design
 * User Authentication
-
-Anthony Giamboy:
 * Database design
 * API implementation
-
-Josh Tec:
 * Basic functionality
 * Routing
